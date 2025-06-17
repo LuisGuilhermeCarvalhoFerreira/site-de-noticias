@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Título da Notícia 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget, facilisis dolor, interdum sapien.",
+        "image": "https://via.placeholder.com/900x300?text=Notícia+1"
+    },
+    {
+        "id": 2,
+        "title": "Título da Notícia 2",
+        "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "https://via.placeholder.com/900x300?text=Notícia+2"
+    },
+    {
+        "id": 3,
+        "title": "Título da Notícia 3",
+        "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "https://via.placeholder.com/900x300?text=Notícia+3"
+    },
+    {
+        "id": 4,
+        "title": "Título da Notícia 4",
+        "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "image": "https://via.placeholder.com/900x300?text=Notícia+4"
+    }
+]
+

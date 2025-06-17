@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fique por dentro das últimas notícias sobre diversos temas." />
+  <meta name="keywords" content="notícias, atualidades, brasil, mundo" />
+  <title>Central de Notícias</title>
+  <link rel="stylesheet" href="/atividade-01-roubo-de-dados/codigo/public/assets/css/style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <style>
+    .carousel-slide {
+      display: none;
+    }
+    .carousel-slide.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" id="logo">Logo</a>
+      <nav>
+        <ul>
+          <li><a href="/categoria/esportes">Esportes</a></li>
+          <li><a href="/categoria/tecnologia">Tecnologia</a></li>
+          <li><a href="/categoria/mundo">Mundo</a></li>
+        </ul>
+      </nav>
+      <h1>Central de Notícias</h1>
+    </div>
+  </header>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li><a href="/">Início</a></li>
+      
+    </ol>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section class="carousel-section" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading" class="visually-hidden">Notícias em Destaque</h2>
+        <div class="carousel" role="region" aria-roledescription="carousel">
+          <div class="carousel-slides">
+            <article class="carousel-slide active" role="group" aria-label="Notícia 1 de 3">
+              <img src="/atividade-01-roubo-de-dados/codigo/public/assets/images/vazamentodedadosimagem.jpg" alt="Dados pessoais sendo expostos em um computador hackeado" />
+              <div class="carousel-caption">
+                <h3><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/noticiasprincipais1.html">Mega Vazamento: Dados de Milhões de Brasileiros Expostos</a></h3>
+                <p>Um ataque hacker expôs dados confidenciais de milhões de brasileiros nesta semana.</p>
+              </div>
+            </article>
+            <article class="carousel-slide" role="group" aria-label="Notícia 2 de 3">
+              <img src="/atividade-01-roubo-de-dados/codigo/public/assets/images/cybersegurançanoticiaimagem.jpg" alt="Ilustração sobre segurança cibernética" />
+              <div class="carousel-caption">
+                <h3><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/noticiasprincipais2.html">Cibersegurança em Alta: Proteja Seus Dados Agora</a></h3>
+                <p>Especialistas indicam medidas para evitar vazamentos de dados em 2025.</p>
+              </div>
+            </article>
+            <article class="carousel-slide" role="group" aria-label="Notícia 3 de 3">
+              <img src="/atividade-01-roubo-de-dados/codigo/public/assets/images/governoataquehackerimagem.jpg" alt="Imagem do governo lidando com ataque hacker" />
+              <div class="carousel-caption">
+                <h3><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/noticiasprincipais3.html">Governo Investiga Ataque a Sistemas Públicos</a></h3>
+                <p>Investigações apontam tentativa de invasão em sistemas federais nesta madrugada.</p>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-control prev" aria-label="Notícia anterior">‹</button>
+          <button class="carousel-control next" aria-label="Próxima notícia">›</button>
+          <div class="carousel-indicators">
+            <button aria-label="Ir para notícia 1" class="active"></button>
+            <button aria-label="Ir para notícia 2"></button>
+            <button aria-label="Ir para notícia 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="news-layout">
+        <section class="main-news-feed" aria-labelledby="main-news-heading">
+          <h2 id="main-news-heading">Notícias Principais</h2>
+          <div id="noticias-container"></div>
+        </section>
+
+        <aside class="latest-news-sidebar">
+          <h2>Últimas Notícias</h2>
+          <ul>
+            <li><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/ultimasnoticias1.html">Novo golpe usa CPF para simular contas bancárias</a> <time datetime="2025-05-17T14:30:00">14:30</time></li>
+            <li><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/ultimasnoticias2.html">Vazamento afeta base de dados de e-commerce</a> <time datetime="2025-05-17T13:15:00">13:15</time></li>
+            <li><a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/ultimasnoticias3.html">Ataques aumentam 60% após pandemia</a> <time datetime="2025-05-17T12:00:00">12:00</time></li>
+            <li><a href="/noticia/ultima-4">Falha em software compromete empresas</a> <time datetime="2025-05-17T10:45:00">10:45</time></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Central de Notícias. Todos os direitos reservados.</p>
+      <p>
+        <a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/sobrenos.html">Sobre Nós</a> |
+        <a href="/contato">Contato</a> |
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
+      </p>
+      <p>Siga-nos:
+        <a href="https://www.facebook.com/?locale=pt_BR">Facebook</a> |
+        <a href="https://x.com/">Twitter</a> |
+        <a href="https://www.instagram.com/">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Carrossel funcional
+    const slides = document.querySelectorAll(".carousel-slide");
+    const nextBtn = document.querySelector(".carousel-control.next");
+    const prevBtn = document.querySelector(".carousel-control.prev");
+    const indicators = document.querySelectorAll(".carousel-indicators button");
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+        indicators[i].classList.toggle("active", i === index);
+      });
+    }
+
+    nextBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    indicators.forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
+
+    showSlide(currentSlide); // inicia carrossel corretamente
+
+    // Notícias dinâmicas
+    const artigos = [
+      {
+        id: 1,
+        titulo: "Mega Vazamento: Dados de Milhões de Brasileiros Expostos",
+        resumo: "Um novo roubo de dados atingiu o Brasil, expondo informações pessoais de milhões de cidadãos...",
+        imagem: "/atividade-01-roubo-de-dados/codigo/public/assets/images/vazamentodedadosimagem.jpg",
+        data: "2025-05-17",
+        autor: "Equipe de Segurança Digital"
+      },
+      {
+        id: 2,
+        titulo: "Cibersegurança: Como Proteger Seus Dados em 2025",
+        resumo: "Saiba como fortalecer sua segurança online com boas práticas e ferramentas atualizadas...",
+        imagem: "/atividade-01-roubo-de-dados/codigo/public/assets/images/cybersegurançanoticiaimagem.jpg",
+        data: "2025-05-20",
+        autor: "Redação Tech"
+      },
+      {
+        id: 3,
+        titulo: "Governo Investiga Ataque a Sistemas Públicos",
+        resumo: "Ataques a sistemas governamentais acenderam alerta nacional. Saiba o que está em risco...",
+        imagem: "/atividade-01-roubo-de-dados/codigo/public/assets/images/governoataquehackerimagem.jpg",
+        data: "2025-05-22",
+        autor: "Agência Nacional"
+      }
+    ];
+
+    const container = document.getElementById("noticias-container");
+
+    artigos.forEach(artigo => {
+      container.innerHTML += `
+        <article class="news-item">
+          <img src="${artigo.imagem}" alt="Imagem relacionada a: ${artigo.titulo}">
+          <h3><a href="/noticia/${artigo.id}">${artigo.titulo}</a></h3>
+          <p class="news-meta">Publicado em: <time datetime="${artigo.data}">${new Date(artigo.data).toLocaleDateString("pt-BR")}</time> por ${artigo.autor}</p>
+          <p>${artigo.resumo}</p>
+         <a href="/atividade-01-roubo-de-dados/codigo/public/modulos/login/noticiasprincipais1.html" class="read-more">Leia mais</a>
+
+        </article>
+      `;
+    });
+  </script>
+</body>
+</html>

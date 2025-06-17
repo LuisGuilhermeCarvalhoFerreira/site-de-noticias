@@ -1,0 +1,57 @@
+<!-- artigo.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Artigo Completo</title>
+</head>
+<body>
+  <div id="conteudo-artigo"></div>
+
+  <script>
+    const artigos = [
+      {
+        id: 1,
+        titulo: "Mega Vazamento: Dados de Milhões de Brasileiros Expostos em Recente Ataque Cibernético",
+        conteudo: `
+          <p>Um novo e alarmante roubo de dados atingiu o Brasil, expondo informações pessoais de milhões de cidadãos...</p>
+          <h2>Detalhes do Ataque</h2>
+          <p>A empresa fictícia "DataGuard"... </p>
+          <img src="https://via.placeholder.com/800x400?text=Ciberseguranca+Vazamento+Dados" alt="Representação visual de roubo de dados.">
+          <figcaption>Representação: O impacto de um roubo de dados para milhões de usuários.</figcaption>
+          <h2>Impacto e Consequências para os Usuários</h2>
+          <p>A exposição de dados como CPF e e-mail coloca os indivíduos em risco...</p>
+          <h2>Medidas de Prevenção e Recomendações</h2>
+          <ul>
+            <li><strong>Senhas Fortes:</strong> Use senhas diferentes para cada serviço.</li>
+            <li><strong>2FA:</strong> Ative sempre que possível.</li>
+            <li><strong>Cuidado com Phishing:</strong> Desconfie de contatos suspeitos.</li>
+            <li><strong>Atualizações:</strong> Mantenha seus softwares atualizados.</li>
+            <li><strong>Monitoramento:</strong> Observe movimentações em suas contas.</li>
+          </ul>
+          <p>Fique atento às atualizações dos órgãos oficiais e da mídia.</p>
+        `
+      }
+      // Adicione mais artigos aqui com IDs diferentes se quiser
+    ];
+
+    // Pegando o ID da URL
+    const params = new URLSearchParams(window.location.search);
+    const id = Number(params.get("id"));
+
+    // Buscando o artigo correspondente
+    const artigo = artigos.find(a => a.id === id);
+
+    // Inserindo o conteúdo ou mensagem de erro
+    const container = document.getElementById("conteudo-artigo");
+    if (artigo) {
+      container.innerHTML = `
+        <h1>${artigo.titulo}</h1>
+        ${artigo.conteudo}
+      `;
+    } else {
+      container.innerHTML = `<p>Artigo não encontrado.</p>`;
+    }
+  </script>
+</body>
+</html>
